@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contato | MOODY EYEWEAR</title>
+  <meta name="description" content="Fale com a MOODY. Dúvidas, parcerias ou só para mandar energia — estamos aqui.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Hanken+Grotesk:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <script src="src/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="src/css/moody.css">
+</head>
+
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+
+  <!-- Top Navigation -->
+  <nav
+    class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] rounded-full px-6 py-3 z-50 bg-background/80 backdrop-blur-md border-2 border-on-background flex justify-between items-center max-w-7xl mx-auto">
+    <a href="index.html"
+      class="text-headline-md font-headline-md font-extrabold tracking-tighter text-primary hover:scale-105 transition-transform">MOODY</a>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="text-on-background font-label-caps text-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300 opacity-80 hover:opacity-100"
+        href="collection.html">Collection</a>
+      <a class="text-on-background font-label-caps text-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300 opacity-80 hover:opacity-100"
+        href="index.html#lookbook">Lookbook</a>
+      <a class="text-on-background font-label-caps text-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300 opacity-80 hover:opacity-100"
+        href="about.html">About</a>
+      <a class="text-secondary font-bold font-label-caps text-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300"
+        href="contact.html">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full border-2 border-on-background" aria-label="Menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a href="collection.html"
+      class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:scale-105 transition-all duration-300 active:scale-95">Shop
+      Now</a>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex-col items-center justify-center gap-8 hidden">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2"><span
+        class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-headline-lg font-headline-lg" href="index.html">Home</a>
+    <a class="text-headline-lg font-headline-lg" href="collection.html">Coleção</a>
+    <a class="text-headline-lg font-headline-lg" href="about.html">Sobre</a>
+    <a class="text-headline-lg font-headline-lg text-secondary font-bold" href="contact.html">Contato</a>
+    <a href="collection.html"
+      class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps text-xl mt-4">Shop
+      Now</a>
+  </div>
+
+  <main class="min-h-screen pt-40 pb-section-gap px-margin-safe max-w-7xl mx-auto relative">
+
+    <!-- Organic Background Blobs -->
+    <div class="absolute top-0 right-0 -z-10 w-96 h-96 bg-primary-container organic-blob opacity-40 blur-3xl"></div>
+    <div class="absolute bottom-20 left-0 -z-10 w-80 h-80 bg-secondary-container organic-blob opacity-30 blur-3xl">
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
+
+      <!-- Left Column -->
+      <div class="flex flex-col gap-10">
+        <div class="space-y-4">
+          <span
+            class="text-label-caps font-label-caps text-secondary uppercase tracking-widest block transform -rotate-2 origin-left">DISPONÍVEL
+            24/7 PARA OS ESQUISITOS.</span>
+          <h1 class="text-headline-xl font-headline-xl text-on-background leading-none">NÃO SEJA UM<br>ESTRANHO.</h1>
+        </div>
+        <p class="text-body-lg font-body-lg max-w-md opacity-80">
+          Se você tiver alguma dúvida sobre seus óculos ou apenas quiser nos enviar alguma energia digital, nós estamos
+          aqui. Vamos fazer algo estranho juntos.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex flex-wrap gap-4 mt-4">
+          <a class="w-14 h-14 rounded-full border-2 border-on-background flex items-center justify-center hover:bg-secondary-container transition-all hover:rotate-12 group"
+            href="#" aria-label="Compartilhar">
+            <span
+              class="material-symbols-outlined text-on-background group-hover:scale-125 transition-transform">share</span>
+          </a>
+          <a class="w-14 h-14 rounded-full border-2 border-on-background flex items-center justify-center hover:bg-primary-container transition-all hover:-rotate-12 group"
+            href="#" aria-label="Chat">
+            <span
+              class="material-symbols-outlined text-on-background group-hover:scale-125 transition-transform">chat_bubble</span>
+          </a>
+          <a class="w-14 h-14 rounded-full border-2 border-on-background flex items-center justify-center hover:bg-tertiary-container transition-all hover:rotate-6 group"
+            href="#" aria-label="Email">
+            <span
+              class="material-symbols-outlined text-on-background group-hover:scale-125 transition-transform">alternate_email</span>
+          </a>
+          <a class="w-14 h-14 rounded-full border-2 border-on-background flex items-center justify-center hover:bg-secondary-container transition-all hover:-rotate-6 group"
+            href="#" aria-label="Instagram">
+            <span
+              class="material-symbols-outlined text-on-background group-hover:scale-125 transition-transform">photo_camera</span>
+          </a>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div
+            class="bg-tertiary-container border-2 border-on-background rounded-xl p-6 transform -rotate-1 hover:rotate-0 transition-transform">
+            <span class="material-symbols-outlined text-tertiary text-3xl mb-3 block">location_on</span>
+            <p class="font-label-caps text-label-caps text-tertiary mb-1">STUDIO</p>
+            <p class="font-body-md text-body-md">Rua das Orquideas, 2340<br>Resende, Rio de Janeiro</p>
+          </div>
+          <div
+            class="bg-primary-container border-2 border-on-background rounded-xl p-6 transform rotate-1 hover:rotate-0 transition-transform">
+            <span class="material-symbols-outlined text-on-primary-container text-3xl mb-3 block">mail</span>
+            <p class="font-label-caps text-label-caps text-on-primary-container mb-1">EMAIL</p>
+            <p class="font-body-md text-body-md">contato@moody.com.br</p>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="bg-secondary-fixed p-8 rounded-xl border-2 border-on-background relative overflow-hidden group">
+          <div
+            class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-container rounded-full opacity-20 transition-transform group-hover:scale-150 duration-700">
+          </div>
+          <h3 class="text-headline-md font-headline-md mb-2">JOIN THE CULT</h3>
+          <p class="text-body-md font-body-md mb-6 opacity-80">Get the latest drops and artistic lookbooks delivered to
+            your brain (via email).</p>
+          <form class="flex flex-col md:flex-row gap-4">
+            <input
+              class="bg-transparent border-b-2 border-on-background outline-none p-2 flex-grow font-body-md focus:bg-white/20 transition-colors"
+              placeholder="Your weird email..." type="email">
+            <button
+              class="bg-on-background text-background px-8 py-3 rounded-full font-label-caps text-label-caps hover:skew-x-2 transition-all"
+              type="button">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div class="relative lg:mt-20">
+        <div
+          class="bg-primary-container p-10 rounded-lg border-2 border-on-background transform rotate-2 hover:rotate-0 transition-transform duration-500 relative z-10">
+          <h2 class="font-headline-md text-headline-md mb-8">NOS ENVIE A TUA ENERGIA</h2>
+          <form class="space-y-8" id="contact-form">
+            <div class="space-y-1">
+              <label class="font-label-caps text-label-caps uppercase text-primary" for="contact-name">Quem é
+                você?</label>
+              <input id="contact-name"
+                class="w-full bg-transparent border-b-2 border-on-background p-2 outline-none font-body-lg text-on-background focus:border-secondary transition-colors"
+                placeholder="Nome ou Alias" type="text">
+            </div>
+            <div class="space-y-1">
+              <label class="font-label-caps text-label-caps uppercase text-primary" for="contact-email">Onde
+                respondo?</label>
+              <input id="contact-email"
+                class="w-full bg-transparent border-b-2 border-on-background p-2 outline-none font-body-lg text-on-background focus:border-secondary transition-colors"
+                placeholder="email@vibe.com" type="email">
+            </div>
+            <div class="space-y-1">
+              <label class="font-label-caps text-label-caps uppercase text-primary" for="contact-message">A
+                MENSAGEM</label>
+              <textarea id="contact-message"
+                class="w-full bg-transparent border-b-2 border-on-background p-2 outline-none font-body-lg text-on-background focus:border-secondary transition-colors resize-none"
+                placeholder="O que está passando pela sua cabeça?" rows="4"></textarea>
+            </div>
+            <button
+              class="w-full bg-on-background text-primary-container py-5 rounded-full text-headline-md font-headline-md wobble-hover"
+              type="submit">
+              ENVIAR ENERGIA
+            </button>
+          </form>
+        </div>
+        <!-- Floating Visual -->
+        <div
+          class="absolute -bottom-16 -left-16 w-64 h-64 border-2 border-on-background rounded-lg overflow-hidden transform -rotate-6 z-20 hidden md:block">
+          <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            alt="Artistic eyewear close-up"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzehj7USavLTxqyDBkwCfOm903LXnX57TKbEp4Nj1uFUy4QGR0Kw_c4DY4LIKn85hzrF9-t937sqZgQ_wqNXDqCPLqJi0dGzpd5Dq-i_WvsqHjc69KxSqtrvxU7OV9iR_2Lenb5jF8q8DisQMnkNnadx-wZGuFCWoGdd5fRZmq0ZKhEny9PhRjeFQ6eWJO7SAsFcVyCNGYiiYZeGNsSbOR8XkS16Jw1NHKBq1_3htzBHQpaKddjTSepUOO481LeFANiyNjldvuJnE">
+        </div>
+        <!-- Success Message (hidden by default) -->
+        <div id="form-success"
+          class="hidden mt-6 bg-primary-container border-2 border-on-background rounded-xl p-6 text-center">
+          <span class="material-symbols-outlined text-5xl text-primary mb-3 block">check_circle</span>
+          <p class="font-headline-md text-headline-md">Energia recebida! ✨</p>
+          <p class="font-body-md text-body-md opacity-80 mt-2">Entraremos em contato em breve, esquisito(a).</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary-container w-full rounded-t-lg pt-[120px] pb-6 border-t-4 border-on-background mt-32">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-margin-safe max-w-7xl mx-auto items-start">
+      <div class="space-y-4">
+        <div class="text-headline-xl font-headline-xl text-on-secondary-container">MOODY</div>
+        <p class="text-body-lg font-body-lg text-on-secondary-container opacity-80">Redefining vision through the lens
+          of radical optimism.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-caps text-label-caps text-on-secondary-container mb-4">NAVEGAR</h4>
+        <a class="text-body-lg font-body-lg text-on-secondary-container opacity-80 hover:opacity-100 hover:text-primary transition-all hover:skew-x-2 inline-block"
+          href="index.html">Home</a>
+        <a class="text-body-lg font-body-lg text-on-secondary-container opacity-80 hover:opacity-100 hover:text-primary transition-all hover:skew-x-2 inline-block"
+          href="collection.html">Coleção</a>
+        <a class="text-body-lg font-body-lg text-on-secondary-container opacity-80 hover:opacity-100 hover:text-primary transition-all hover:skew-x-2 inline-block"
+          href="about.html">Sobre</a>
+        <a class="text-body-lg font-body-lg text-on-secondary-container opacity-80 hover:opacity-100 hover:text-primary transition-all hover:skew-x-2 inline-block underline decoration-4 underline-offset-8"
+          href="contact.html">Contato</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-caps text-label-caps text-on-secondary-container mb-4">LOCALIZAÇÃO</h4>
+        <p class="text-body-lg font-body-lg text-on-secondary-container opacity-80">
+          Rua das Orquideas, 2340<br>Resende, RJ<br>hello@moody.eye
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-20 px-margin-safe max-w-7xl mx-auto border-t border-on-secondary-container/20 pt-8 text-center md:text-left">
+      <p class="font-label-caps text-label-caps text-on-secondary-container opacity-60">© 2026 MOODY EYEWEAR. STAY
+        WEIRD.</p>
+    </div>
+  </footer>
+
+  <script src="src/js/moody.js"></script>
+  <script>
+    // Contact form submit feedback
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    if (contactForm && formSuccess) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        contactForm.style.opacity = '0';
+        contactForm.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => {
+          contactForm.style.display = 'none';
+          formSuccess.classList.remove('hidden');
+        }, 300);
+      });
+    }
+  </script>
+</body>
+
+</html>

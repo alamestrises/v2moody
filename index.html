@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MOODY — Stay Weird, Move Loud.</title>
+  <meta name="description"
+    content="MOODY Eyewear — Óculos de alta moda para quem vive em alta definição. Move Loud, Stay Weird.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Hanken+Grotesk:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <script src="src/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="src/css/moody.css">
+</head>
+
+<body
+  class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary overflow-x-hidden">
+
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] rounded-full px-6 py-3 z-50 bg-background/80 backdrop-blur-md border-2 border-on-background flex justify-between items-center max-w-7xl mx-auto">
+    <a href="index.html"
+      class="text-headline-md font-headline-md font-extrabold tracking-tighter text-primary hover:scale-105 transition-transform">MOODY</a>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="text-secondary font-bold text-label-caps font-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300"
+        href="collection.html">Coleção</a>
+      <a class="text-on-background opacity-80 hover:opacity-100 text-label-caps font-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300"
+        href="index.html#lookbook">Lookbook</a>
+      <a class="text-on-background opacity-80 hover:opacity-100 text-label-caps font-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300"
+        href="about.html">Sobre</a>
+      <a class="text-on-background opacity-80 hover:opacity-100 text-label-caps font-label-caps hover:scale-105 hover:rotate-2 transition-all duration-300"
+        href="contact.html">Contato</a>
+    </div>
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full border-2 border-on-background" aria-label="Menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a href="collection.html"
+      class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-caps text-label-caps handmade-border btn-wobble transition-transform active:scale-95">Shop
+      Now</a>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 hidden">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2"><span
+        class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-headline-lg font-headline-lg" href="index.html">Home</a>
+    <a class="text-headline-lg font-headline-lg" href="collection.html">Coleção</a>
+    <a class="text-headline-lg font-headline-lg" href="about.html">Sobre</a>
+    <a class="text-headline-lg font-headline-lg" href="contact.html">Contato</a>
+    <a href="collection.html"
+      class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps text-xl mt-4">Compre
+      Agora</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-section-gap px-margin-safe overflow-hidden">
+      <div
+        class="absolute -top-20 -left-20 w-96 h-96 bg-secondary-container opacity-30 rounded-full blur-3xl animate-pulse">
+      </div>
+      <div
+        class="absolute bottom-40 -right-20 w-[500px] h-[500px] bg-primary-container opacity-20 rounded-full blur-3xl">
+      </div>
+      <div class="relative z-10 text-center max-w-6xl">
+        <h1 class="font-headline-xl text-headline-xl uppercase mb-8 leading-[0.85] flex flex-col">
+          <span class="block text-primary transform -rotate-1 translate-x-[-5%]">BOA ENERGIA</span>
+          <span class="block text-on-background transform rotate-1">FICA BOM</span>
+          <span class="block text-secondary transform -rotate-2 translate-x-[5%]">EM VOCÊ.</span>
+        </h1>
+        <div class="relative mt-12 mb-16">
+          <div class="relative w-full max-w-4xl mx-auto">
+            <div class="absolute inset-0 bg-secondary transform rotate-3 translate-x-4 translate-y-4 rounded-xl -z-10">
+            </div>
+            <img alt="Trendy group of friends"
+              class="w-full h-[600px] object-cover rounded-xl handmade-border shadow-2xl"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6eOKu4olbe_kBVaoF2pCReqKJ7hp9E3eQIBDdexE6zsUS2toov51JHGcEtuuIZcqwbfPGo_m9yTbs20Qb94fIIDbBn0QmT4xm0QWiK82dsrFRhdp_V_VDRsU4K8NazAY-EeOfdISZe7m38kUFnLovHMWKTa1avkwL6Acwl-Ax3aR4872v9GG3IA9sD0VNiiMon7Sd14q7VQYSL_oAKTIOYTglBUgXvHUA5ftcTaIhVA7sKw6486__caeTApmn3TbU_te8zqsmV-LR">
+            <div
+              class="absolute -top-10 -right-10 bg-primary text-on-primary p-6 rounded-full handmade-border btn-wobble cursor-default">
+              <span class="font-label-caps text-label-caps block">MOVE</span>
+              <span class="font-headline-md text-headline-md block">LOUD.</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <a href="collection.html"
+            class="bg-primary text-on-primary px-12 py-6 rounded-full font-headline-md text-headline-md handmade-border btn-wobble shadow-lg transition-transform hover:-translate-y-2 inline-block">
+            Conheça os Modelos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="bg-primary text-on-primary py-section-gap px-margin-safe relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div class="text-headline-xl font-headline-xl text-outline whitespace-nowrap absolute -top-10 animate-marquee">
+          FREEDOM MOVEMENT ENERGY SYNERGY FREEDOM MOVEMENT ENERGY FREEDOM MOVEMENT ENERGY SYNERGY </div>
+      </div>
+      <div class="max-w-4xl mx-auto relative z-10 text-center">
+        <span class="font-label-caps text-label-caps uppercase tracking-widest mb-4 block">Our Manifesto</span>
+        <p class="font-headline-lg text-headline-lg leading-tight">
+          We believe in the power of <span class="text-primary-container italic">vibrant chaos</span>. Moody isn't just
+          eyewear; it's a tool for <span class="underline decoration-secondary decoration-8 underline-offset-8">radical
+            self-expression</span>. We make frames for the dreamers, the dancers, and the unapologetically loud.
+        </p>
+      </div>
+    </section>
+
+    <!-- Diferenciais (Bento Grid) -->
+    <section class="py-section-gap px-margin-safe max-w-7xl mx-auto">
+      <h2 class="font-headline-lg text-headline-lg mb-16 text-center uppercase">Built for the Wild</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+        <div
+          class="md:col-span-2 bg-secondary-container p-10 rounded-lg handmade-border flex flex-col justify-between hover:skew-y-1 transition-transform">
+          <div class="flex justify-between items-start mb-12">
+            <div class="bg-on-secondary-container text-secondary-container p-4 rounded-full">
+              <span class="material-symbols-outlined text-[48px]">sunny</span>
+            </div>
+            <span class="font-label-caps text-label-caps opacity-60">TECH 01</span>
+          </div>
+          <div>
+            <h3 class="font-headline-md text-headline-md mb-4 text-on-secondary-container">UV400 PROTECTION</h3>
+            <p class="font-body-lg text-body-lg text-on-secondary-container/80">Maximum defense against the sun, because
+              your vibe shouldn't be limited by the light.</p>
+          </div>
+        </div>
+        <div class="bg-surface-variant p-8 rounded-lg handmade-border hover:-rotate-1 transition-transform">
+          <div class="bg-on-surface-variant text-surface-variant p-4 rounded-full w-fit mb-8">
+            <span class="material-symbols-outlined">visibility</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md mb-2">POLARIZED</h3>
+          <p class="font-body-md text-body-md">Crystal clear vision for the blurriest of nights and brightest of days.
+          </p>
+        </div>
+        <div class="bg-primary-container p-8 rounded-lg handmade-border hover:rotate-1 transition-transform">
+          <div class="bg-on-primary-container text-primary-container p-4 rounded-full w-fit mb-8">
+            <span class="material-symbols-outlined">air</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md mb-2">ULTRALIGHT</h3>
+          <p class="font-body-md text-body-md">So light you'll forget you're wearing them, but the world won't.</p>
+        </div>
+        <div
+          class="md:col-span-4 bg-tertiary-container p-12 rounded-lg handmade-border flex flex-col md:flex-row items-center gap-12 group">
+          <div class="md:w-1/3">
+            <div class="bg-tertiary text-tertiary-container p-6 rounded-full w-fit mb-6">
+              <span class="material-symbols-outlined text-[64px]">water_drop</span>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg mb-4 text-on-tertiary-container">WATER RESISTANT</h3>
+            <p class="font-body-lg text-body-lg text-on-tertiary-container/80">From pool parties to sudden downpours,
+              keep your energy flowing without a worry.</p>
+          </div>
+          <div class="md:w-2/3 grid grid-cols-2 gap-4">
+            <div
+              class="aspect-square bg-secondary-fixed rounded-xl handmade-border overflow-hidden rotate-2 group-hover:rotate-0 transition-all duration-500">
+              <img alt="Water detail" class="w-full h-full object-cover" src="img/expoazul.png">
+            </div>
+            <div
+              class="aspect-square bg-primary-fixed rounded-xl handmade-border overflow-hidden -rotate-2 group-hover:rotate-0 transition-all duration-500 mt-8">
+              <img alt="Beach scene" class="w-full h-full object-cover" src="img/exporosa.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Gallery / Lookbook -->
+    <section id="lookbook" class="py-section-gap bg-surface-container-high overflow-hidden">
+      <div class="px-margin-safe mb-12 flex justify-between items-end">
+        <div>
+          <span class="font-label-caps text-label-caps text-primary uppercase">Editorial</span>
+          <h2 class="font-headline-lg text-headline-lg uppercase">The Lookbook</h2>
+        </div>
+        <a class="font-label-caps text-label-caps underline decoration-2 underline-offset-4 hover:text-primary transition-colors"
+          href="collection.html">Ver Mais</a>
+      </div>
+      <div class="flex flex-nowrap md:grid md:grid-cols-3 gap-gutter px-margin-safe overflow-x-auto pb-8 snap-x">
+        <div class="min-w-[80vw] md:min-w-0 snap-center relative group">
+          <img alt="Lookbook 01"
+            class="w-full aspect-[0.8] object-cover rounded-xl handmade-border shadow-md group-hover:scale-[1.02] transition-transform duration-500"
+            src="img/hoj.png">
+          <div
+            class="absolute top-4 left-4 bg-background px-4 py-1 rounded-full handmade-border font-label-caps text-label-caps">
+            STREET HEAT</div>
+        </div>
+        <div class="min-w-[80vw] md:min-w-0 snap-center relative group mt-12 md:mt-24">
+          <div class="w-full aspect-[0.8] bg-secondary-fixed rounded-xl handmade-border overflow-hidden">
+            <img alt="Lookbook 02"
+              class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              src="img/lookbook2.png">
+          </div>
+          <div
+            class="absolute -bottom-6 -right-4 bg-primary text-on-primary px-8 py-4 rounded-full handmade-border font-headline-md text-headline-md transform -rotate-12">
+            RADICAL</div>
+        </div>
+        <div class="min-w-[80vw] md:min-w-0 snap-center relative group">
+          <img alt="Lookbook 03"
+            class="w-full aspect-[0.8] object-cover rounded-xl handmade-border shadow-md group-hover:scale-[1.02] transition-transform duration-500"
+            src="img/lookbook3.png">
+          <div
+            class="absolute top-1/2 -left-8 bg-on-background text-background px-6 py-2 rounded-full handmade-border font-label-caps text-label-caps -rotate-90">
+            SUMMER VIBES</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Energy -->
+    <section class="py-section-gap px-margin-safe text-center bg-background relative overflow-hidden">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-headline-xl text-headline-xl uppercase mb-12">COMMUNITY ENERGY</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+          <div class="p-8 bg-secondary-container rounded-lg handmade-border transform rotate-1">
+            <p class="font-headline-md text-headline-md text-on-secondary-container mb-6 italic">"Finally found frames
+              that match my inside chaos. Never taking these off."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-on-secondary-container"></div>
+              <span class="font-label-caps text-label-caps text-on-secondary-container">@LUNA_DREAMER</span>
+            </div>
+          </div>
+          <div class="p-8 bg-primary-container rounded-lg handmade-border transform -rotate-2 md:mt-12">
+            <p class="font-headline-md text-headline-md text-on-primary-container mb-6 italic">"The only sunglasses that
+              don't fall off when I'm skating. Total game changer."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-on-primary-container"></div>
+              <span class="font-label-caps text-label-caps text-on-primary-container">@JAX_WHEELS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-10 left-10 w-24 h-24 bg-tertiary-container rounded-full handmade-border flex items-center justify-center animate-bounce">
+        <span class="material-symbols-outlined text-tertiary text-4xl">star</span>
+      </div>
+      <div
+        class="absolute bottom-20 right-10 w-32 h-32 bg-secondary-fixed rounded-full handmade-border flex items-center justify-center -rotate-12">
+        <span class="font-label-caps text-label-caps text-on-secondary-fixed text-center">STAY<br>WEIRD</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full rounded-t-lg pt-section-gap pb-gutter bg-secondary-container border-t-4 border-on-background">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-safe max-w-7xl mx-auto">
+      <div class="flex flex-col gap-8">
+        <div class="text-headline-xl font-headline-xl text-on-secondary-container">MOODY</div>
+        <p class="font-body-lg text-body-lg text-on-secondary-container/80">Designing high-fashion energy for holistic
+          movement. Radical optimism in every frame.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-caps text-label-caps text-on-secondary-container uppercase">Nav</h4>
+        <div class="flex flex-col gap-2">
+          <a class="font-body-lg text-body-lg opacity-80 hover:opacity-100 hover:text-primary transition-all underline decoration-4 underline-offset-8"
+            href="collection.html">Shop Collection</a>
+          <a class="font-body-lg text-body-lg opacity-80 hover:opacity-100 hover:text-primary transition-all"
+            href="about.html">About</a>
+          <a class="font-body-lg text-body-lg opacity-80 hover:opacity-100 hover:text-primary transition-all"
+            href="contact.html">Contact</a>
+          <a class="font-body-lg text-body-lg opacity-80 hover:opacity-100 hover:text-primary transition-all"
+            href="contact.html">Support</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-label-caps text-label-caps text-on-secondary-container uppercase">Stay in the Loop</h4>
+        <div class="flex flex-col gap-4">
+          <input
+            class="bg-transparent border-b-2 border-on-secondary-container py-2 px-0 focus:ring-0 focus:border-primary placeholder:text-on-secondary-container/40 outline-none"
+            placeholder="Your Email" type="email">
+          <button
+            class="bg-on-secondary-container text-secondary-container px-8 py-3 rounded-full font-label-caps text-label-caps handmade-border hover:skew-x-2 transition-all">Join
+            the Energy</button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-section-gap px-margin-safe max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-on-secondary-container/20 pt-8">
+      <p class="font-label-caps text-label-caps text-on-secondary-container">© 2024 MOODY EYEWEAR. STAY WEIRD.</p>
+      <div class="flex gap-8">
+        <a class="font-label-caps text-label-caps text-on-secondary-container opacity-80 hover:opacity-100"
+          href="#">Privacy</a>
+        <a class="font-label-caps text-label-caps text-on-secondary-container opacity-80 hover:opacity-100"
+          href="#">Terms</a>
+        <a class="font-label-caps text-label-caps text-on-secondary-container opacity-80 hover:opacity-100"
+          href="#">Shipping</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/moody.js"></script>
+</body>
+
+</html>
