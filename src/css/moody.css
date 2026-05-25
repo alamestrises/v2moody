@@ -1,0 +1,161 @@
+/* ============================================
+   MOODY EYEWEAR — Global Stylesheet
+   Stay Weird, Move Loud.
+   ============================================ */
+
+/* ---- Material Symbols ---- */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ---- Brand Utilities ---- */
+.text-outline {
+  -webkit-text-stroke: 2px #1a1d11;
+  color: transparent;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px currentColor;
+  color: transparent;
+}
+
+.handmade-border {
+  border: 2px solid #1a1d11;
+}
+
+.rotate-label {
+  writing-mode: vertical-rl;
+}
+
+/* ---- Blob / Organic Shapes ---- */
+.organic-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morphBlob 8s ease-in-out infinite;
+}
+
+.blob-mask {
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF0066' d='M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.5,81.4,29,72.9,41.4C64.4,53.8,53,64,39.9,71.1C26.8,78.2,13.4,82.1,-0.5,82.9C-14.4,83.7,-28.8,81.5,-42.1,74.5C-55.4,67.5,-67.6,55.7,-75.4,41.9C-83.2,28.1,-86.6,12.3,-85.4,-3.2C-84.1,-18.7,-78.2,-33.9,-68.8,-46.3C-59.4,-58.7,-46.5,-68.3,-32.7,-75.7C-18.9,-83.1,-9.4,-88.3,2.7,-93C14.7,-97.7,29.4,-102,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/* ---- Button Animations ---- */
+.btn-wobble:hover {
+  animation: wobble 0.3s ease-in-out infinite;
+}
+
+.wobble-hover:hover {
+  animation: wobble 0.6s ease-in-out infinite alternate;
+}
+
+/* ---- Stagger Layout ---- */
+.stagger-item:nth-child(even) {
+  transform: translateY(40px);
+}
+
+@media (max-width: 768px) {
+  .stagger-item:nth-child(even) {
+    transform: translateY(0);
+  }
+}
+
+/* ---- Custom Cursor ---- */
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #536500;
+  border-radius: 50%;
+  z-index: 9999;
+  transition: transform 0.1s ease, background-color 0.15s ease;
+  mix-blend-mode: multiply;
+}
+
+/* ---- Page Transitions ---- */
+.page-enter {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+
+@keyframes wobble {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25%       { transform: scale(0.97) rotate(-1.5deg); }
+  75%       { transform: scale(1.05) rotate(2deg); }
+}
+
+@keyframes morphBlob {
+  0%   { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50%  { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---- Marquee (hero manifesto) ---- */
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* ---- Horizontal Scroll Ticker ---- */
+.ticker-track {
+  animation: ticker 20s linear infinite;
+}
+
+/* ---- Reveal on scroll ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Smooth focus for inputs ---- */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #b40082;
+}
+
+/* ---- Mobile menu overlay animation ---- */
+#mobile-menu {
+  transition: opacity 0.25s ease;
+}
+
+#mobile-menu.hidden {
+  display: none;
+}
+
+#mobile-menu:not(.hidden) {
+  display: flex;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
